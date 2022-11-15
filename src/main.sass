@@ -1,0 +1,169 @@
+*
+   margin: 0
+   padding: 0
+
+body, html
+   background-color: #3a2a2a84
+   letter-spacing: 2px
+
+.header
+   background-image: url(/src/images/bg2.jpeg)
+   background-position: 0 -7rem
+   background-size: 100%
+   background-repeat: no-repeat
+   height: 50vh
+
+.header:before
+   content: ""
+   width: 100%
+   height: 50vh
+   position: absolute
+   top: 0
+   left: 0
+   background-image: linear-gradient(90deg, #1f2937, #111927)
+   opacity: 0.8
+
+.container
+   width: 80%
+   margin: auto
+   height: 100%
+
+.content
+   width: 100%
+   height: 100%
+   display: flex
+   flex-direction: column
+   justify-content: center
+   align-items: center
+   position: relative
+
+h1
+   padding: 10px
+   color: #70c817
+   font-size: 5rem
+   font-family: shlop
+   font-weight: bold
+
+.text
+   color: #30dde9
+   font-family: shlop
+   font-size: 2rem
+   font-weight: bold
+
+.characters
+   margin-top: 20px
+   display: flex
+   width: 100%
+   flex-wrap: wrap
+   justify-content: center
+   text-overflow: ellipsis
+
+.box
+   width: 30%
+   height: auto
+   background-color: #1f2937
+   margin: 1.3rem
+   border-radius: .5rem
+   box-shadow: 4px 5px #3a2a2a79
+   display: flex
+   text-overflow: ellipsis
+   img
+      width: 50%
+
+   .character
+      width: 100%
+      margin: 10px
+      display: flex
+      flex-direction: column
+      justify-content: center
+   .name
+      font-family: shlop
+      font-size: 2rem
+      color: #70c817
+
+   .species
+      text-align: center
+      padding: 5px
+      background-color: #364150
+      color: #fff
+      border-radius: .5rem
+      text-transform: uppercase
+      font-size: 1rem
+      margin: 3px 0px
+      font-family: shlop
+   .status
+      text-align: center
+      padding: 4px
+      background-color: #364150
+      color: #fff
+      border-radius: .4rem
+      text-transform: uppercase
+      font-size: .9rem
+      margin: 3px 0px
+
+@media screen and (max-width: 1588px)
+
+   .container
+      width: 85%
+      text-align: center
+   .box
+      .character
+         .name
+            // font-size: 35px
+@media screen and (max-width: 1450px)
+   .container
+      width: 90%
+
+@media screen and (max-width: 1300px)
+   .container
+      width: 95%
+
+@media screen and (max-width: 1230px)
+   .container
+      width: 100%
+   .box
+      width: 35%
+
+@media screen and (max-width: 1080px)
+   .box
+      width: 45%
+
+@media screen and (max-width: 1080px)
+
+   .container
+      width: 80%
+   .box
+      width: 100%
+
+@media screen and (max-width: 636px)
+   .title
+      // font-size: 4rem
+      padding: 5px
+
+@media screen and (max-width: 914px)
+   .header
+      height: 50vh
+      background-position: center
+      background-size: 141%
+
+@media screen and (max-width: 482px)
+   .container
+      width: 95%
+   .title
+      padding: 4px
+
+@media screen and (max-width: 385px)
+   .box
+      .character
+         .name
+            font-size: 1rem
+
+@media screen and (max-width: 394px)
+   .box
+      .character
+         .name
+            // font-size: 20px
+
+@media screen and (max-width: 260px)
+   .box
+      margin: .4rem
